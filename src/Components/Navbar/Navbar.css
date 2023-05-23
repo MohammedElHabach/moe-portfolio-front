@@ -1,0 +1,120 @@
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 1.2rem 0;
+}
+
+.nav-links {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  list-style: none;
+  width: 45%;
+}
+
+.nav-links a {
+  text-decoration: none;
+  padding: 0 2rem;
+  cursor: pointer;
+  color: var(--secondaryLighter);
+  font-size: 18px;
+}
+
+.nav-links .hello-btn {
+  background: transparent;
+  color: var(--mainColor);
+  font-size: 18px;
+  border-color: var(--mainColor);
+  border: 2px solid;
+  padding: 0.6rem 1rem;
+  border-radius:32px ;
+}
+
+.nav-links .hello-btn:hover{
+    background-color: var(--mainColor);
+    color: var(--infoColor);
+}
+
+.nav-links a:hover {
+  color: var(--mainColor);
+}
+
+.mobile-menu-icon {
+  display: none;
+}
+
+@media only screen and (max-width: 1024px) {
+  .nav-links {
+    display: none;
+  }
+
+  .logo {
+    display: flex;
+    position: absolute;
+    top: 0.5rem;
+    left: 1.3rem;
+  }
+
+  .nav-links-mobile {
+    /* position: absolute; */
+    display: flex;
+    list-style: none;
+    /* left: 50%;
+    top: 10%; */
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 10%;
+    transition: all 0.5s ease-out;
+    width: 100%;
+  }
+
+  .nav-links-mobile a {
+    text-decoration: none;
+    color:var(--secondaryLighter);
+  }
+
+  .nav-links-mobile a:hover {
+    color:var(--mainColor);
+  }
+
+  .nav-links a {
+    text-align: center;
+    transition: all 0.5s ease-out;
+    width: 100%;
+  }
+
+  .nav-links-mobile .hello-btn {
+    background: transparent;
+    color: var(--mainColor);
+    font-size: 18px;
+    border-color: var(--mainColor);
+    border: 2px solid;
+    padding: 0.6rem 1rem;
+    border-radius:32px ;
+    margin-top: 1rem;
+  }
+  
+  .nav-links-mobile .hello-btn:hover{
+      background-color: var(--mainColor);
+      color: var(--infoColor);
+  }
+
+  .mobile-menu-icon {
+    display: block;
+    position: absolute;
+    font-size: 20px;
+    border: none;
+    outline: none;
+    top: 1.6rem;
+    right: 2rem;
+    background: transparent;
+  }
+}
+
+@media only screen and (max-width: 470px) {
+  .nav-links-mobile{
+    margin-top: 15%;
+  }
+}
