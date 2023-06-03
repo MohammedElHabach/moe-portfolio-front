@@ -1,0 +1,28 @@
+.lower-section{
+    margin-top: 5rem;
+}
+
+.lowerCard-h3{
+    color: var(--secondaryColor)
+}
+
+.lowerCard-ul-front{
+    color: var(--secondaryLighter);
+    list-style: none;
+    margin-top: 1rem;
+}
+
+.lowerCard-ul-front li{
+    padding: 0.5rem 0;
+    cursor: pointer;
+}
+
+.lowerCard-ul-front li a{
+    text-decoration: none;
+    color: var(--secondaryLighter);
+}
+
+.lowerCard-ul-front li a:hover{
+    color: var(--mainColor);
+
+}
