@@ -3,6 +3,10 @@
     border-top: 1px solid var(--mainColor);
 }
 
+.lower-section2{
+    margin-top: 3rem;
+}
+
 .lowerCard-h3{
     color: var(--secondaryColor);
     padding-top: 2rem;

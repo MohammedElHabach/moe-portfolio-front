@@ -97,6 +97,8 @@ const Hero = () => {
               classH3={"lowerCard-h3"}
               classUl={"lowerCard-ul-front"}
               tech={techBack}
+              index="1"
+
             />
           </Card>
 
