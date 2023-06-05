@@ -1,0 +1,113 @@
+.contact-h1 {
+  font-weight: 300;
+  text-align: center;
+  font-size: 40px;
+  color: var(--secondaryColor);
+  margin-top: 3rem;
+}
+
+.email-name-container {
+  display: flex;
+  justify-content: center;
+  column-gap: 5rem;
+  margin-top: 3rem;
+}
+
+.text-area-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 3rem;
+  margin-left: 0.3rem;
+}
+
+.send-email-btn {
+  margin-top: 2rem;
+  background: transparent;
+  color: var(--mainColor);
+  font-size: 18px;
+  border-color: var(--mainColor);
+  border: 2px solid;
+  padding: 0.6rem 2.5rem;
+  border-radius: 32px;
+  cursor: pointer;
+}
+
+.send-email-btn:hover {
+  background-color: var(--mainColor);
+  color: var(--infoColor);
+}
+
+.errors {
+  color: red;
+  padding-top: 2px;
+}
+
+@media screen and (max-width: 768px) {
+  .email-name-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+  }
+
+  .send-email-btn {
+    padding: 0.6rem 17.3rem;
+  }
+
+  .email-input,
+  .name-input {
+    width: 40rem !important;
+  }
+
+  .contact-h1 {
+    font-size: 30px;
+  }
+}
+
+@media screen and (max-width: 693px) {
+  .email-input,
+  .name-input {
+    width: 30rem !important;
+  }
+
+  .send-email-btn {
+    padding: 0.6rem 12.5rem;
+  }
+}
+
+@media screen and (max-width: 498px) {
+  .send-email-btn {
+    padding: 0.6rem 12.35rem;
+  }
+}
+
+@media screen and (max-width: 493px) {
+  .send-email-btn {
+    padding: 0.6rem 12.2rem;
+  }
+}
+
+@media screen and (max-width: 490px) {
+  .email-input,
+  .name-input {
+    width: 20rem !important;
+  }
+
+  .send-email-btn {
+    padding: 0.6rem 7.5rem;
+  }
+}
+
+@media screen and (max-width: 339px) {
+  .email-input,
+  .name-input {
+    width: 15rem !important;
+  }
+
+  .send-email-btn {
+    padding: 0.6rem 5rem;
+  }
+}

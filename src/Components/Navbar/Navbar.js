@@ -1,12 +1,16 @@
 import React, { useState } from "react";
 import "./Navbar.css";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 const Navbar = () => {
   const [isMobile, setIsMobile] = useState(false);
 
   const handleMenu = () => {
     setIsMobile((prevState) => !prevState);
   };
+
+  const location = useLocation()
+  const routeName = location.pathname;
+
   return (
     <>
       <nav className="navbar">
@@ -33,8 +37,8 @@ const Navbar = () => {
         </Link>
 
         <ul className={isMobile?'nav-links-mobile':'nav-links'}>
-          <Link to=""><li>Projects</li></Link>
-          <Link to="/contact" className="hello-btn">Say Hello</Link>
+         {!(routeName === '/contact') && (<Link to="" ><li>Projects</li></Link>)} 
+          <Link to="/contact" onClick={handleMenu} className="hello-btn">Say Hello</Link>
         </ul>
 
         <button className="mobile-menu-icon" onClick={handleMenu}>
