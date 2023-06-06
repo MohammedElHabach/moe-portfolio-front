@@ -7,6 +7,7 @@ import * as Yup from "yup";
 import axios from "axios";
 import { toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import Footer from "../../Components/Footer/Footer";
 
 const initialValues = { name: "", email: "", content: "" };
 const contactURL = process.env.REACT_APP_URL + "/contact";
@@ -123,6 +124,7 @@ const ContactUs = () => {
           </button>
         </div>
       </form>
+      <Footer/>
     </>
   );
 };

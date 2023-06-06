@@ -1,0 +1,87 @@
+.footer-container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: var(--mainColor);
+    min-height: 18rem;
+    margin-top: 4.1rem;
+  }
+  
+  .footer-logo {
+    margin-top: 1.6rem;
+  }
+  
+  .footer-container p {
+    color: var(--infoColor);
+    font-size: 26px;
+    font-weight: 300;
+    text-align: center;
+    margin-top: 1rem;
+  }
+  
+  .social-menu ul {
+    padding: 0;
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center; /* Center the list items horizontally */
+  }
+  
+  .social-menu ul li {
+    list-style: none;
+    margin: 0 3rem; /* Adjust the margin as per your preference */
+  }
+  
+  .social-menu ul li .fa {
+    color: var(--infoColor);
+    font-size: 25px;
+    line-height: 50px;
+    transition: 0.5s;
+  }
+  
+  .social-menu ul li:hover .fa {
+    color: var(--mainColor);
+  }
+  
+  .social-menu ul li a {
+    position: relative;
+    display: block;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 1px solid var(--infoColor);
+    text-align: center;
+    transition: 0.5s;
+    transform: translate(0, 0px);
+  }
+  
+  .social-menu ul li a:hover {
+    background-color: var(--infoColor);
+  }
+  
+  .social-menu ul li:hover {
+    color: var(--mainColor);
+  }
+  
+  @media screen and (max-width: 538px) {
+    .footer-container {
+      margin-right: 0; /* Adjust the right margin to remove any unwanted space */
+    }
+  }
+
+  @media screen and (max-width: 438px) {
+    
+  .social-menu ul li {
+    list-style: none;
+    margin: 0 1.7rem; /* Adjust the margin as per your preference */
+  }
+  }
+
+  @media screen and (max-width: 310px) {
+    
+    .social-menu ul li {
+      list-style: none;
+      margin: 0 1rem; /* Adjust the margin as per your preference */
+    }
+    }
+
+  
