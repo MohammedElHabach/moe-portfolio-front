@@ -38,7 +38,7 @@ const Navbar = () => {
 
         <ul className={isMobile?'nav-links-mobile':'nav-links'}>
          {!(routeName === '/contact') && (<Link to="" ><li>Projects</li></Link>)} 
-          <Link to="/contact" onClick={handleMenu} className="hello-btn">Say Hello</Link>
+          <Link to="/contact" onClick={()=>setIsMobile(false)} className="hello-btn">Say Hello</Link>
         </ul>
 
         <button className="mobile-menu-icon" onClick={handleMenu}>
