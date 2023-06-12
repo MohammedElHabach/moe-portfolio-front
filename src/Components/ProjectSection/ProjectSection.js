@@ -7,6 +7,8 @@ const ProjectSection = () => {
   const [projects, setProjects] = useState([]);
   const [loading, setLoading] = useState(true);
 
+
+
   const projectsURL = process.env.REACT_APP_URL + "/projects";
 
   const fetchProjects = async () => {
@@ -25,7 +27,7 @@ const ProjectSection = () => {
 
   return (
     <>
-      <section className="project-section-container">
+      <section  id="projects-sec" className="project-section-container">
         <h1 className="recent-work-title">My Recent Work </h1>
         <p className="recent-work-paragraph">
           Here are a selection of projects I've been involved in or contributed

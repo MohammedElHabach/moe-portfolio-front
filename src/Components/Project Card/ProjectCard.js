@@ -5,7 +5,6 @@ import lms from "../../assets/lms-logo.png"
 import book from "../../assets/book-logo.png"
 import { Link } from 'react-router-dom'
 const ProjectCard = ({ title, img, desc, demoLink, techStack }) => {
-   console.log(img);
   
   return (
     <div className={`project-card`} >

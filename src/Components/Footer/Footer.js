@@ -1,13 +1,14 @@
 import React from "react";
 import "./Footer.css";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 const Footer = () => {
+  const location = useLocation()
+  const isHomePage = location.pathname === '/'
   return (
     <>
-      <div className="footer-container">
+      <div className={isHomePage ? 'footer-home' : "footer-container " }>
         <Link to="/" className="footer-logo">
           <svg
-            // class="svg-inline--fa fa-mf-logo has-text-primary fa-4x"
             viewBox="0 0 640 512"
             style={{
               width: "1.25em",

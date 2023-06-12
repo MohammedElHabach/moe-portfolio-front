@@ -6,6 +6,26 @@
     min-height: 18rem;
     margin-top: 4.1rem;
   }
+
+  .footer-home{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: var(--mainColor);
+    margin-top: -6rem;
+    min-height: 28rem;
+    padding-top: 8rem;
+    z-index: 1;
+    position: relative;
+  }
+
+  .footer-home p {
+    color: var(--infoColor);
+    font-size: 26px;
+    font-weight: 300;
+    text-align: center;
+    margin-top: 1rem;
+  }
   
   .footer-logo {
     margin-top: 1.6rem;

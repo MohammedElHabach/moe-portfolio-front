@@ -1,0 +1,56 @@
+.start-container {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: var(--secondaryColor);
+  justify-content: space-evenly;
+  height: 10rem;
+  align-items: center;
+  color: var(--infoColor);
+  max-width: 80rem;
+  text-align: center;
+  margin: 0 auto;
+  border-radius: 12px;
+ margin-top: 10rem;
+ z-index: 5;
+ position: relative;
+}
+
+.start-p {
+  font-size: 18px;
+}
+
+.lets-do-btn {
+  text-decoration: none;
+  color: var(--infoColor);
+  display: flex;
+  align-items: center;
+  font-size: 20px;
+  border: 2px solid #5be9b9;
+  padding: 10px;
+  border-radius: 25px;
+  width: 12rem;
+  justify-content: center;
+}
+
+.lets-do-btn svg {
+    fill: var(--infoColor); /* Set the initial color of the SVG */
+    transition: fill 0.3s ease; /* Add transition effect */
+    width: 1rem;
+    height: 1.3rem;
+  }
+  
+  .lets-do-btn:hover {
+    color: black;
+    background-color: #5be9b9;
+  }
+  
+  .lets-do-btn:hover svg {
+    fill: black; /* Change the color of the SVG on hover */
+  }
+
+  @media screen and (max-width:1095px) {
+    .start-container{
+        flex-direction: column;
+        height: 18rem;
+     }
+  }

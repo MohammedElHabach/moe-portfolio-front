@@ -1,8 +1,16 @@
-import React, { useState } from "react";
+import React, {  useRef, useState } from "react";
 import "./Navbar.css";
 import { Link, useLocation } from "react-router-dom";
 const Navbar = () => {
   const [isMobile, setIsMobile] = useState(false);
+  const projectRef = useRef(null)
+
+  const scrollToSection = (elementRef) => {
+    window.scrollTo({
+      top:elementRef.current.offsetTop,
+      behavior:"smooth"
+    })
+  }
 
   const handleMenu = () => {
     setIsMobile((prevState) => !prevState);
@@ -37,7 +45,7 @@ const Navbar = () => {
         </Link>
 
         <ul className={isMobile?'nav-links-mobile':'nav-links'}>
-         {!(routeName === '/contact') && (<Link to="" ><li>Projects</li></Link>)} 
+         {!(routeName === '/contact') && (<a href="#projects-sec" onClick={()=>setIsMobile(false)}><li>Projects</li></a>)} 
           <Link to="/contact" onClick={()=>setIsMobile(false)} className="hello-btn">Say Hello</Link>
         </ul>
 
