@@ -5,6 +5,9 @@ import ContactUs from "./Pages/ContactUsPage/ContactUs";
 import RootLayout from "./Pages/Root";
 import ErrorPage from "./Pages/ErrorPage/ErrorPage";
 import { ToastContainer } from "react-toastify";
+import Login from "./Pages/LoginPage/Login";
+import Dashboard from "./Pages/Dashboard/Dashboard";
+import DashboardProjects from "./Pages/Dashboard/DashboardProjects";
 
 const router = createBrowserRouter([
   {
@@ -22,6 +25,21 @@ const router = createBrowserRouter([
       },
     ],
   },
+  {
+    path:"/dashboard",
+    element:<Login/>,
+  },
+  {
+    path:"/dashboard/admin",
+    element:<Dashboard/>,
+    children:[
+      {
+        path:"/dashboard/admin/projects",
+        element:<DashboardProjects/>
+      }
+    ]
+  }
+ 
 ]);
 
 function App() {

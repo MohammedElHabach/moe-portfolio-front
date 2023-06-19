@@ -8,7 +8,6 @@ import trace from "../../assets/trace.png";
 import UpperCard from "../UpperCard/UpperCard";
 import LowerCard from "../LowerCard/LowerCard";
 import cv from "../../assets/Mohammed El Habach - CV.pdf";
-import ProjectSection from "../ProjectSection/ProjectSection";
 const Hero = () => {
   const techFront = [
     { name: "React", link: "https://reactjs.org" },
@@ -127,7 +126,7 @@ const Hero = () => {
 
       </section>
       
-      {/* <ProjectSection/>  */}
+     
     </>
   );
 };

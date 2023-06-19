@@ -1,16 +1,8 @@
-import React, {  useRef, useState } from "react";
+import React, {  useState } from "react";
 import "./Navbar.css";
 import { Link, useLocation } from "react-router-dom";
 const Navbar = () => {
   const [isMobile, setIsMobile] = useState(false);
-  const projectRef = useRef(null)
-
-  const scrollToSection = (elementRef) => {
-    window.scrollTo({
-      top:elementRef.current.offsetTop,
-      behavior:"smooth"
-    })
-  }
 
   const handleMenu = () => {
     setIsMobile((prevState) => !prevState);
